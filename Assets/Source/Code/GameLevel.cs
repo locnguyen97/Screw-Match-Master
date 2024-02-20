@@ -54,10 +54,7 @@ public class GameLevel : MonoBehaviour
         var color = listRandom[Random.Range(0, listRandom.Count)];
         for (int i = 0; i < gameObjectsPoint.Count; i++)
         {
-            if (slot ==0 )
-            {
-                color = listRandom[Random.Range(0, listRandom.Count)];
-            }
+            color = listRandom[Random.Range(0, listRandom.Count)];
             var x = listObjRandom[Random.Range(0, listObjRandom.Count)];
             x.GetComponent<Car>().SetData(color,"listColor"+listRandom.IndexOf(color));
             listObjRandom.Remove(x);
